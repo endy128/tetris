@@ -4,6 +4,8 @@ var move_distance = 5000
 var is_active = true
 
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -11,7 +13,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(global_position.x)		
+	#print(global_position.x)
 	# FIXME: needs to add in the size of the blocks
 	if ( global_position.x > -166 and global_position.x < 160):
 		if(Input.is_action_just_pressed("left")):

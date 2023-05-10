@@ -6,6 +6,9 @@ var acceleration = 2
 var drop_speed = 50
 var drop_vector = Vector2(0, drop_speed)
 
+
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -31,3 +34,4 @@ func _del_line():
 	
 func _drop_blocks():
 	pass
+
