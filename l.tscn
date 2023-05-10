@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://ibjim5vo6e5x"]
+
+[ext_resource type="Texture2D" uid="uid://bn48f77awn403" path="res://art/block.png" id="1_mwfqg"]
+
+[node name="l" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 1)
+texture = ExtResource("1_mwfqg")
+offset = Vector2(-4, -1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(3, 1)
+texture = ExtResource("1_mwfqg")
+offset = Vector2(-4, -51)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(3, 1)
+texture = ExtResource("1_mwfqg")
+offset = Vector2(-4, 49)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(103, 1)
+texture = ExtResource("1_mwfqg")
+offset = Vector2(-54, 49)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-26, -75, 24, -75, 24, 25, 74, 25, 74, 75, -26, 75)
