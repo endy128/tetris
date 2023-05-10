@@ -12,6 +12,7 @@ script = ExtResource("1_4j1jx")
 offset = Vector2(206, 457)
 
 [node name="l" parent="." instance=ExtResource("1_brcwa")]
+visible = false
 position = Vector2(0, -436)
 script = ExtResource("3_fgtmu")
 

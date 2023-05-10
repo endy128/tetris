@@ -29,4 +29,16 @@ func _draw():
 	# draw the row gridlines
 	for i in range(START_Y, BLOCK_SIZE * ROWS + START_Y + 1, BLOCK_SIZE):
 		draw_line(Vector2(START_X, i), Vector2(COLUMNS * BLOCK_SIZE + START_X, i ), GRID_COLOUR, GRID_WIDTH)
+	_fill_square(0,0)
+	_fill_square(2,5)
+	_fill_square(9,19)
 	
+func _fill_square( x, y ):
+	var rect = Rect2(x * BLOCK_SIZE + START_X, y * BLOCK_SIZE + START_Y, BLOCK_SIZE, BLOCK_SIZE)
+	draw_rect(rect, GRID_COLOUR)
+	
+# TODO
+# render shape
+# drop shape
+# rotate shape
+# collision detection
